@@ -2,18 +2,33 @@
 
 This is a boilerplate for creating cli applications using node.
 
-## Commands
+## Adapting to your Application:
+> Find and rename all the `loki` occurances to whatever your application name is. Ex: `shiny-cli-app`
+
+## Development Commands
 
 ```bash
-# To link the command, build and start the watch process to rebuild.
+# To link the cli app, start the watch and rebuild process.
 npm run start
 
-# to build the cli app
+# to just build the cli app:
 npm run build
+
+# This will link the cli app into your machine.
+npm link
 
 # use this to remove the cli app from your machine.
 npm unlink
 ```
+
+## Running the CLI app.
+Once you start the watch and rebuild process, you should be able to run the cli app from the command line like so:
+
+```bash
+# Running the cli app
+loki disguise "Captian America"
+```
+
 
 ## Code Setup
 
