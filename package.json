@@ -3,15 +3,36 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm link && npm run build:watch",
+    "clean": "rm -rf ./lib",
+    "build": "npx babel src --out-dir lib",
+    "build:watch": "npx nodemon --exec npm run build",
+    "remove_bin": "npm unlink"
   },
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.4.5",
+    "commander": "^2.20.0",
+    "lodash": "^4.17.11"
+  },
   "devDependencies": {
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-preset-minify": "^0.5.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.2.0",
-    "eslint-plugin-import": "^2.18.0"
+    "eslint-plugin-import": "^2.18.0",
+    "nodemon": "^1.19.1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "lib/*"
+    ]
+  },
+  "bin": {
+    "loki": "./bin/loki"
   }
 }
