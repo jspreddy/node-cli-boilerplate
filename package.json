@@ -8,9 +8,9 @@
     "link": "npm link",
     "unlink": "npm unlink"
   },
-  "author": "",
+  "author": "jspreddy",
   "license": "ISC",
-  "description": "",
+  "description": "This is a boilerplate for a cli application.",
   "dependencies": {
     "@babel/cli": "^7.5.0",
     "@babel/core": "^7.4.5",
