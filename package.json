@@ -1,13 +1,13 @@
 {
-  "name": "cli-project-1",
+  "name": "node-cli-boilerplate",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/loki.js",
   "scripts": {
     "start": "npm link && npm run build:watch",
-    "clean": "rm -rf ./lib",
-    "build": "npx babel src --out-dir lib",
+    "build": "npx babel src --delete-dir-on-start --out-dir lib",
     "build:watch": "npx nodemon --exec npm run build",
-    "remove_bin": "npm unlink"
+    "link": "npm link",
+    "unlink": "npm unlink"
   },
   "author": "",
   "license": "ISC",
