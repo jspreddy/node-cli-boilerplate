@@ -38,7 +38,10 @@ loki disguise "Captian America"
 - If you have more than one root level command, then consider putting them in their own folders.
 - The commands need to have `#!/usr/bin/env node` as the first line in the file.
 
-The code is put in the `./src` folder. This gets compiled down into the `./lib` directory.
+### What is the `./lib` directory?
+The code in the `./src` folder gets compiled down into the `./lib` directory.
+
+> Do not manually change anything in the `./lib` directory.
 
 
 ### Project structure for Single Root level command
@@ -86,6 +89,14 @@ In package.json we would setup the entry points like so:
 loki disguise "Thor"
 thor hammer "smash"
 ```
+
+### Documentation for the libraries used:
+Check the `package.json` file for exact versions for packages used.
+
+- commander: https://github.com/tj/commander.js
+- lodash: https://lodash.com/docs/4.17.10
+- Other interesting CLI packages:
+    - Check the **Command-line apps** section here: https://github.com/sindresorhus/awesome-nodejs#command-line-apps
 
 ## FAQ
 

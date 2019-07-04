@@ -12,12 +12,12 @@
   "license": "ISC",
   "description": "This is a boilerplate for a cli application.",
   "dependencies": {
-    "@babel/cli": "^7.5.0",
-    "@babel/core": "^7.4.5",
     "commander": "^2.20.0",
     "lodash": "^4.17.11"
   },
   "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.4.5",
     "@babel/node": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "babel-preset-minify": "^0.5.0",
