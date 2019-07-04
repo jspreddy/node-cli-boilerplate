@@ -1,7 +1,6 @@
 {
   "name": "node-cli-boilerplate",
   "version": "1.0.0",
-  "main": "./src/loki.js",
   "scripts": {
     "start": "npm link && npm run build:watch",
     "build": "npx babel src --delete-dir-on-start --out-dir lib",
@@ -33,6 +32,6 @@
     ]
   },
   "bin": {
-    "loki": "./lib/loki.js"
+    "loki": "./lib/commands/loki/loki.js"
   }
 }

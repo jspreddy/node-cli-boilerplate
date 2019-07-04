@@ -5,7 +5,7 @@ program
   .version('0.1.0')
   .option('-p, --peppers', 'Add peppers')
   .command('program <name>', 'This is a sub program for the loki tool.')
-  .command('p2 <name>', 'Another sub command.')
+  .command('disguise <name>', 'Another sub command.')
   .parse(process.argv);
 
 if (program.peppers) {
