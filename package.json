@@ -33,6 +33,6 @@
     ]
   },
   "bin": {
-    "loki": "./bin/loki"
+    "loki": "./lib/loki.js"
   }
 }
