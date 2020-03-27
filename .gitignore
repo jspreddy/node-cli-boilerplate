@@ -1,3 +1,14 @@
 node_modules
-.vscode
+coverage
 
+.env
+.idea
+.DS_Store
+
+*.log
+.vscode/
+dist
+
+
+lib
+lib/**/*

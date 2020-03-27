@@ -4,6 +4,11 @@
   "scripts": {
     "start": "npm link && npm run build:watch",
     "lint": "npx eslint ./src",
+    "test": "npx jest",
+    "test:watch": "npx jest --watch",
+    "test:cover": "npx jest --coverage",
+    "test:cover:open": "open ./coverage/lcov-report/index.html",
+    "test:cover:watch": "npx jest --watch --coverage",
     "build": "npx babel src --delete-dir-on-start --out-dir lib",
     "build:watch": "npx nodemon --exec npm run build",
     "link": "npm link",
@@ -21,10 +26,13 @@
     "@babel/core": "^7.9.0",
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.0",
+    "babel-jest": "^25.2.3",
     "babel-preset-minify": "^0.5.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.8.2",
+    "jest": "^25.2.3",
     "nodemon": "^2.0.2"
   },
   "nodemonConfig": {

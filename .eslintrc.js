@@ -16,4 +16,10 @@ module.exports = {
   },
   rules: {
   },
+  plugins: [
+    'jest'
+  ],
+  env: {
+    "jest/globals": true
+  }
 };
