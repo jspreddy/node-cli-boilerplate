@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "scripts": {
     "start": "npm link && npm run build:watch",
+    "lint": "npx eslint ./src",
     "build": "npx babel src --delete-dir-on-start --out-dir lib",
     "build:watch": "npx nodemon --exec npm run build",
     "link": "npm link",
