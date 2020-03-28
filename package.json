@@ -1,6 +1,6 @@
 {
   "name": "node-cli-boilerplate",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "scripts": {
     "start": "npm run build && npm run link && npm run build:watch",
     "lint": "npx eslint ./src",
