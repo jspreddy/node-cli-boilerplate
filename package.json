@@ -1,6 +1,6 @@
 {
   "name": "node-cli-boilerplate",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "scripts": {
     "start": "npm run build && npm run link && npm run build:watch",
     "lint": "npx eslint ./src",
@@ -21,22 +21,22 @@
   "license": "ISC",
   "description": "This is a boilerplate for a cli application.",
   "dependencies": {
-    "commander": "^5.0.0",
-    "lodash": "^4.17.19"
+    "commander": "^5.1.0",
+    "lodash": "^4.17.20"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
-    "@babel/node": "^7.8.7",
-    "@babel/preset-env": "^7.9.0",
-    "babel-jest": "^25.2.3",
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.1",
+    "babel-jest": "^25.5.1",
     "babel-preset-minify": "^0.5.1",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jest": "^23.8.2",
-    "jest": "^25.2.3",
-    "nodemon": "^2.0.2"
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^23.20.0",
+    "jest": "^25.5.4",
+    "nodemon": "^2.0.6"
   },
   "nodemonConfig": {
     "ignore": [
